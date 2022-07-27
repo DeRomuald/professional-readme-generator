@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require ('fs');
 const inquirer = require ('inquirer');
-const develop = require ('./develop');
+const PromptUI = require('inquirer/lib/ui/prompt');
 const generateMarkdown = require ('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
@@ -21,7 +21,14 @@ const promptUser = ()=> {
             type: 'checkbox',
             name: 'tableOfContents',
             message: 'Select your Table of Contents( Check all that apply)',
-            choices: ['Project Title', 'Description', 'Installation', 'Usage','License', 'Contributing','Tests','Questions']
+            choices: [   'Project Title',
+                         'Description', 
+                         'Installation', 
+                         'Usage',
+                         'License', 
+                         'Contributing',
+                         'Tests',
+                         'Questions']
         },
         {
             type: 'input',
@@ -79,13 +86,30 @@ const promptUser = ()=> {
         }
 
     ]);
-}
-
+};
+ 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = (fileName, data) => {
+    return new Promise ((resolve, reject) => {
+        fs.writeFile(fileName,data,err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve ({
+                ok:true,
+                message: 'Readme File Created!'
+            });
+        });
+    });
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+    promptUser().then (response => {
+    writeToFile('./dist/README.md', generateMarkdown(response));
+    });
+};
 
 // Function call to initialize app
 init();
