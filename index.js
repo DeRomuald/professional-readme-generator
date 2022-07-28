@@ -20,9 +20,7 @@ const promptUser = ()=> {
             type: 'checkbox',
             name: 'tableOfContents',
             message: 'Select your Table of Contents( Check all that apply)',
-            choices: [   'Project Title',
-                         'Description', 
-                         'Installation', 
+            choices: [ 'Installation', 
                          'Usage',
                          'License', 
                          'Contributing',
@@ -43,19 +41,17 @@ const promptUser = ()=> {
             type: 'list',
             name: 'license',
             message: 'Choose the appropriate license for this project',
-            choices: ['Apache License 2.0',
-            'GNU General Public License v3.0',
-            'MIT License',
-            'BSD 2-Clause "Simplified" License',
-            'BSD 3-Clause "New" or "Revised" License',
-            'Boost Software License 1.0',
-            'Creative Commons Zero v1.0 Universal',
-            'Eclipse Public License 2.0',
-            'GNU Affero General Public License v3.0',
-            'GNU General Public License v2.0',
-            'GNU Lesser General Public License v2.1',
-            'Mozilla Public License 2.0',
-            'The Unlicense']
+            choices: ['Apache_License_2.0',
+            'GNU_General_Public_License_v3.0',
+            'MIT_License',
+            'Boost_Software_License_1.0',
+            'Creative_Commons_Zero_v1.0_Universal',
+            'Eclipse_Public_License_2.0',
+            'GNU_Affero_General_Public_License_v3.0',
+            'GNU_General_Public_License_v2.0',
+            'GNU_Lesser_General_Public_License_v2.1',
+            'Mozilla_Public_License_2.0',
+            'The_Unlicense']
             
         },
         {
@@ -66,7 +62,7 @@ const promptUser = ()=> {
         {
             type: "input",
             name: "tests",
-            message: "Is there a Test included"
+            message: "Is there a Test included?"
         },
         {
             type: "input",
@@ -76,14 +72,14 @@ const promptUser = ()=> {
         {
             type: "input",
             name: "questions",
-            message: "What do I do if I have an issue?"
+            message: "What is your email address?"
         },
         {
             type: "input",
             name: "userName",
             message: "Please enter your GitHub username"
-        }
-
+        },
+       
     ]);
 };
  
