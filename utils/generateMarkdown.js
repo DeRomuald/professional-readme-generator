@@ -68,7 +68,7 @@ const generateMarkdown = data => {
   ## Questions
 
   <br />
-  :octocat: Find me on GitHub: [${userName}](https://github.com/${userName})<br />
+  :octocat: Find me on GitHub:(https://github.com/${userName})<br />
   <br />
   ✉️ Email me with any additional questions: ${questions}<br /><br />
   
