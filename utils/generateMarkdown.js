@@ -1,68 +1,76 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { (!license)?'':`https://img.shields.io/badge/license-${license}-9cf`;
+const renderLicenseBadge =license =>{ 
+  return (!license.length)?'':
+  `https://img.shields.io/badge/license-${license}-9cf`;
 
-}
+};              
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  (!license)?'':{
-
-  }
-}
+const renderLicenseLink =license => {
+  return (!license.length)?'':
+  `* [License](#license)`;
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-    let result = (!license)?'':{
+const renderLicenseSection =license => {
+  return (!license.length)?'':
+  `## License ${license}`;  
+};
 
-    }
-}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = data => {
+  const{projectTitle,license,description, installation, usage, contributing,tests, acknowledgments,questions,userName}= data;
+  
   return `
-  # ${data.title}
-  ![badge for selected license](https://img.shields.io/badge/license-${data.license}-9cf)
+  # ${projectTitle}
+  
+  ${renderLicenseBadge(license)}
   
   ## Description
-  ${data.description}
+  ${description}
 
   ## Table of Contents
   *[Installation](#installation)
   *[Usage](#usage)
-  *[License](#license) 
+  ${renderLicenseLink(license)} 
   *[Contributing](#contributing)
   *[Tests](#tests)
   *[Questions](#questions)
 
   ## Installation
 
-  ${data.installation}
+  ${installation}
 
   ## Usage
 
-  ${data.usage}
+  ${usage}
 
   ## License
 
-  ${data.license}
+  ${renderLicenseSection(license)}
 
   ## Contributing
 
-  ${data.contributing}
+  ${contributing}
 
   ## Tests
 
-  ${data.tests}
+  ${tests}
 
+  ## Acknowlegements
+
+  ${acknowledgments}
+  
   ## Questions
 
-  ${data.questions}
+  ${questions}
 
   ## Username
-  [Github account](https://github.com/${data.github})
+  [Github account](https://github.com/${userName})
   
  `;
 }

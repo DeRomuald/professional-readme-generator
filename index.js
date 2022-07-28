@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require ('fs');
 const inquirer = require ('inquirer');
-const PromptUI = require('inquirer/lib/ui/prompt');
 const generateMarkdown = require ('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
@@ -81,7 +80,7 @@ const promptUser = ()=> {
         },
         {
             type: "input",
-            name: "username",
+            name: "userName",
             message: "Please enter your GitHub username"
         }
 
