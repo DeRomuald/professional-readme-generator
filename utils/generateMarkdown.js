@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 const renderLicenseBadge =license =>{ 
   return (!license.length)?'':
-  `https://img.shields.io/badge/license-${license}-9cf`;
+  `(https://img.shields.io/badge/license-${license}-9cf)`;
 
 };              
 
@@ -31,12 +31,14 @@ const generateMarkdown = data => {
   ${renderLicenseBadge(license)}
   
   ## Description
+
   ${description}
 
   ## Table of Contents
+
   *[Installation](#installation)
   *[Usage](#usage)
-  ${renderLicenseLink(license)} 
+  *${renderLicenseLink(license)} 
   *[Contributing](#contributing)
   *[Tests](#tests)
   *[Questions](#questions)
@@ -64,13 +66,13 @@ const generateMarkdown = data => {
   ## Acknowlegements
 
   ${acknowledgments}
-  
+
   ## Questions
 
   ${questions}
 
   ## Username
-  [Github account](https://github.com/${userName})
+  [Github](https://github.com/${userName})
   
  `;
 }
