@@ -30,11 +30,11 @@ THEN I am taken to the corresponding section of the README
 * inquirer
 
 # Screenshot
+<img width="1214" alt="Screen Shot 2022-08-18 at 11 42 05 PM" src="https://user-images.githubusercontent.com/100550961/185539673-513b02b2-25d3-4d9e-ae3c-c7b4b1e1f0ab.png">
 
 
 # Links
-
-
+https://github.com/DeRomuald/professional-readme-generator
  
 # Acknowledgements
 ### This project was inspired by the UM Coding Boot Camp.
