@@ -14,7 +14,7 @@ const promptUser = ()=> {
         {
             type: 'input',
             name: 'description',
-            message: 'Write a brief description of your project'
+            message: 'Please write a brief description of your project'
         },
         {
             type: 'checkbox',
@@ -35,12 +35,12 @@ const promptUser = ()=> {
         {
             type: 'input',
             name: 'usage',
-            message: 'Please describe the usage of your project'
+            message: 'Please describe the usage of your project. What is your User story?'
         },
         {
             type: 'list',
             name: 'license',
-            message: 'Choose the appropriate license for this project',
+            message: 'Please select license',
             choices: ['Apache_License_2.0',
             'GNU_General_Public_License_v3.0',
             'MIT_License',
@@ -56,18 +56,18 @@ const promptUser = ()=> {
         },
         {
             type: "input",
-            name: "contributing",
-            message: "Who are the contributors of this projects?"
+            name: "contributors",
+            message: "Who are the contributors of this project?"
         },
         {
             type: "input",
             name: "tests",
-            message: "Is there a Test included?"
+            message: "Are there any tests included?(please specify)"
         },
         {
             type: "input",
             name: "acknowledgments",
-            message: "Is anyone to be acknowledge?"
+            message: "Are there any aknowlegedments or inspirations for your project?"
         },
         {
             type: "input",

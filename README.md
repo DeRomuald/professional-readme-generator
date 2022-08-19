@@ -27,7 +27,7 @@ THEN I am taken to the corresponding section of the README
 ### This project was created with:
 * Node.js
 * JavaScript
-* npm
+* inquirer
 
 # Screenshot
 
@@ -38,5 +38,5 @@ THEN I am taken to the corresponding section of the README
  
 # Acknowledgements
 ### This project was inspired by the UM Coding Boot Camp.
-### Mockup:
+
 

@@ -1,49 +1,49 @@
 
-  # d
+  # Readme Gen
   
   ## Description
 
-  d
+  makes creating readme efficient
 
   ## Table of Contents
 
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license) 
-  * [Contributing](#contributing)
+  * [Contributors](#contributors)
   * [Tests](#tests)
   * [Questions](#questions)
 
   ## Installation
 
-  d
+  npm init, npm install inquirer
 
   ## Usage
 
-  d
+  users will be able to create Readme files faster
 
   ## License
 
-  ![badge](https://img.shields.io/badge/license-Eclipse_Public_License_2.0-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT_License-brightgreen)
 
-  ## Contributing
+  ## Contributors
 
-  d
+  Rome Romulus
 
   ## Tests
 
-  d
+  no
 
   ## Acknowlegements
 
-  d
+  UM bootcamp
 
   ## Questions
 
   <br />
-  :octocat: Find me on GitHub: [DeRomuald](https://github.com/DeRomuald)<br />
+  :octocat: Find me on GitHub:(https://github.com/DeRomuald)<br />
   <br />
-  ✉️ Email me with any additional questions: deromuald@gmail.com<br /><br />
+  ✉️ Email me with any additional questions: test@gmail.com<br /><br />
   
   
  
